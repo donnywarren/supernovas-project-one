@@ -5,6 +5,7 @@ Description:
 "STAR WARS FAN-TASTIC" is an animated visual interface that allows users to engage with a multitude of resources from the movie series "Star Wars".  The design is intended to be dynamic, immersive and extremely intuitive with the goal of fostering a desire to explore the material.  High quality images and comprehensive text and links provide substantial content to keep users interested.  The over all appearance is reminiscent of the original movie with the addition of contemporary, elegant cinematographic styles.  Though the subject of this website is a movie series, the design is reusable (with tweaks) for any image haavy subject.
 
 Wireframes:
+![test](https://i.imgur.com/4hjkn7N)
 ![heroPage](https://i.imgur.com/v6GwCSV.jpg)
 ![secondScene](https://i.imgur.com/zyivPo2.jpg)
 ![finalIntorScene](https://i.imgur.com/0H4v7oy.jpg)
