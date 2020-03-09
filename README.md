@@ -14,7 +14,7 @@ Wireframes:
 ![movieViewMobile](https://i.imgur.com/jgFllv0.jpg)
 
 API:
-Primary -- "The Movie Database API", http://api.themoviedb.org/3
+Primary -- "The Movie Database API", http://api.themoviedb.org
 Secondary -- "SWAPI, The Star Wars API", http://swapi.co
 
 MVP:
