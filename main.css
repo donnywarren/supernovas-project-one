@@ -1,9 +1,4 @@
-/* div {
-  min-width: 200px;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 20px;  
-} */
+
 
 
 
@@ -14,7 +9,6 @@ body {
   background-color: #000000;
   color: #ff6;
   font-family: 'News Cycle', sans-serif;
-
 }
 
 
@@ -74,97 +68,76 @@ body {
 
 .poster {
   width: 100%;
+  border-top: 4px solid rgba(255, 255, 255, 0.5);
+  border-right: 4px solid rgba(255, 255, 255, 0.2);
+  border-left: 4px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
 }
 
+.poster-div {
+  position: absolute;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  min-height: 150px;
+
+}
+
+.poster-div:hover {
+  width: 17vw;
+  height: calc(17vw * 1.5);
+  cursor: pointer;
+  transform: translate(-10px, -30px);
+  /* transform: translateX(-10px);
+  transform: translateY(-30px); */
+  z-index: 500;
+}
 
 
 .poster1-container {
-  position: absolute;
   top:6.25vh;
   left: 3.42vw;
-  width: 15vw;
-  height: calc(15vw * 1.5);
-  min-width: 100px;
-  min-height: 150px;
 }
+
+
 .poster2-container {
-  position: absolute;
   top: 6.25vh;
   left: 23.33vw;
-  width: 15vw;
-  height: calc(15vw * 1.5);
-  min-width: 100px;
-  min-height: 150px;
 }
 
 .poster3-container {
-  position: absolute;
   top: 6.25vh;
-  left: 41.75vw;
-  width: 15vw;
-  height: calc(15vw * 1.5);
-  min-width: 100px;
-  min-height: 150px;
+  left: 42.5vw;
 }
 
 .poster4-container {
-  position: absolute;
   top: 6.25vh;
   left: 61.67vw;
-  width: 15vw;
-  height: calc(15vw * 1.5);
-  min-width: 100px;
-  min-height: 150px;
 }
 
 .poster5-container {
-  position: absolute;
   top: 6.25vh;
   left: 80.83vw;
-  width: 15vw;
-  height: calc(15vw * 1.5);
-  min-width: 100px;
-  min-height: 150px;
 }
 
 .poster6-container {
-  position: absolute;
   top: 53vh;
   left: 8vw;
-  width: 15vw;
-  height: calc(15vw * 1.5);
-  min-width: 100px;
-  min-height: 150px;
 }
 
 .poster7-container {
-  position: absolute;
   top: 53vh;
   left: 31vw;
-  width: 15vw;
-  height: calc(15vw * 1.5);
-  min-width: 100px;
-  min-height: 150px;
 }
 
 .poster8-container {
-  position: absolute;
   top: 53vh;
   left: 54vw;
-  width: 15vw;
-  height: calc(15vw * 1.5);
-  min-width: 100px;
-  min-height: 150px;
 }
 
 .poster9-container {
-  position: absolute;
   top: 53vh;
   left: 77vw;
-  width: 15vw;
-  height: calc(15vw * 1.5);
-  min-width: 100px;
-  min-height: 150px;
 }
 
 
