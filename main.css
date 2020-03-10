@@ -88,8 +88,6 @@ body {
   height: calc(17vw * 1.5);
   cursor: pointer;
   transform: translate(-10px, -30px);
-  /* transform: translateX(-10px);
-  transform: translateY(-30px); */
   z-index: 500;
 }
 
@@ -143,9 +141,9 @@ body {
 
 
 
+/* ================ CENTERING FOR LARGE FOCUS DIV =============== */
 
-
-.FOCUS DIV{
+/* .FOCUS DIV{
   position: absolute;
 
   top: 0;
@@ -166,4 +164,4 @@ body {
   background-color: orange;
   transform: translateX(-50%);
   transform: translateY(-50%);
-}
+} */
