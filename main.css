@@ -1,6 +1,196 @@
-div {
-  width: 200px;
+/* div {
+  min-width: 200px;
   border: 1px solid black;
   padding: 10px;
   margin: 20px;  
+} */
+
+
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  color: #ff6;
+  font-family: 'News Cycle', sans-serif;
+
+}
+
+
+.hero-logo {
+  z-index: 100;
+  position: absolute;
+  display:flex;
+  opacity: 0;
+  width: 120%;
+  height: auto;
+  margin-top: -5%;
+  animation: disappear;
+  /* animation-delay: 250ms; */
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+#logo {
+  width: 100%;
+}
+
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 0;
+    margin-top: 25%;
+    opacity: 1;
+  }
+}
+
+#main-poster-container {
+  position: relative;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  animation: appear;
+  animation-delay: 4s;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.poster {
+  width: 100%;
+}
+
+
+
+.poster1-container {
+  position: absolute;
+  top:6.25vh;
+  left: 3.42vw;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  min-height: 150px;
+}
+.poster2-container {
+  position: absolute;
+  top: 6.25vh;
+  left: 23.33vw;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  min-height: 150px;
+}
+
+.poster3-container {
+  position: absolute;
+  top: 6.25vh;
+  left: 41.75vw;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  min-height: 150px;
+}
+
+.poster4-container {
+  position: absolute;
+  top: 6.25vh;
+  left: 61.67vw;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  min-height: 150px;
+}
+
+.poster5-container {
+  position: absolute;
+  top: 6.25vh;
+  left: 80.83vw;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  min-height: 150px;
+}
+
+.poster6-container {
+  position: absolute;
+  top: 53vh;
+  left: 8vw;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  min-height: 150px;
+}
+
+.poster7-container {
+  position: absolute;
+  top: 53vh;
+  left: 31vw;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  min-height: 150px;
+}
+
+.poster8-container {
+  position: absolute;
+  top: 53vh;
+  left: 54vw;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  min-height: 150px;
+}
+
+.poster9-container {
+  position: absolute;
+  top: 53vh;
+  left: 77vw;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  min-height: 150px;
+}
+
+
+
+
+
+
+.FOCUS DIV{
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 15vw;
+  height: calc(15vw * 1.5);
+  min-width: 100px;
+  margin: auto;
+
+
+  top:50%;
+  left: 50%;
+  width: auto;
+  height: 75vh;
+  min-width: 100px;
+  background-color: orange;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
 }
