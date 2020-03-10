@@ -168,12 +168,49 @@ body {
 
 /* ====================== FACT PAGE STYLING ============================== */
 
-#fact-page-stage {
+#trailer-page-stage {
   width: 80vw;
   height: 80vh;
   margin-top: 50px;
-  border-top: 8px solid rgba(255, 255, 255, 0.6);
-  border-right: 8px solid rgba(255, 255, 255, 0.2);
-  border-left: 8px solid rgba(255, 255, 255, 0.4);
-  border-bottom: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 12px solid rgba(255, 255, 255, 0.6);
+  border-right: 12px solid rgba(255, 255, 255, 0.2);
+  border-left: 12px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 12px solid rgba(255, 255, 255, 0.25);
+}
+
+
+iframe #trailer-star-wars {
+  display: none;
+}
+
+iframe #trailer-strike-back {
+  display: none;
+}
+
+iframe #trailer-jedi {
+  display: inherit;
+}
+
+#trailer-phantom {
+  display: none;
+}
+
+#trailer-attack {
+  display: none;
+}
+
+#trailer-revenge {
+  display: none;
+}
+
+#trailer-awakens {
+  display: none;
+}
+
+#trailer-last-jedi {
+  display: none;
+}
+
+#trailer-rise {
+  display: none;
 }
