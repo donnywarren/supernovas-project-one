@@ -16,6 +16,46 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+  // sessionStorage.movieId = test;
+  console.log(sessionStorage.movieId)
+
+
+
+  const currentVideo = document.querySelector(`#${sessionStorage.movieId}`)
+
+
+  console.log(currentVideo);
+
+
+  // document.onload = function () { myFunction() };
+
+  function playVideo() {
+    currentVideo.setAttribute("style", "display: inherit;")
+  }
+
+  playVideo();
+
+
+
+
+
+
+
+  //   <iframe id="myFrame" src="/default.asp"></iframe>
+
+  //     <p id="demo"></p>
+
+  //     <script>
+  //       document.getElementById("myFrame").onload = function() {myFunction()};
+
+  // function myFunction() {
+  //         document.getElementById("demo").innerHTML = "Iframe is loaded.";
+  // }
+  // </script>
+
+
+
+
 
 
   // ==============================  ONLOAD CLOSING BRACKET BELOW  =================================

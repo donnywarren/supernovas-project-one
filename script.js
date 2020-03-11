@@ -14,6 +14,99 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+  let movieName;
+
+
+  const factPageButton1 = document.querySelector("#poster1");
+
+  factPageButton1.addEventListener('click', function () {
+    movieName = document.querySelector("#poster1").getAttribute("movieId");
+    sessionStorage.movieId = movieName;
+    console.log(movieName);
+
+    openFactPage();
+  });
+
+  const factPageButton2 = document.querySelector("#poster2");
+
+  factPageButton2.addEventListener('click', function () {
+    movieName = document.querySelector("#poster2").getAttribute("movieId");
+    sessionStorage.movieId = movieName;
+    console.log(movieName);
+
+    openFactPage();
+  });
+
+  const factPageButton3 = document.querySelector("#poster3");
+
+  factPageButton3.addEventListener('click', function () {
+    movieName = document.querySelector("#poster3").getAttribute("movieId");
+    sessionStorage.movieId = movieName;
+    console.log(movieName);
+
+    openFactPage();
+  });
+
+  const factPageButton4 = document.querySelector("#poster4");
+
+  factPageButton4.addEventListener('click', function () {
+    movieName = document.querySelector("#poster4").getAttribute("movieId");
+    sessionStorage.movieId = movieName;
+    console.log(movieName);
+
+    openFactPage();
+  });
+
+  const factPageButton5 = document.querySelector("#poster5");
+
+  factPageButton5.addEventListener('click', function () {
+    movieName = document.querySelector("#poster5").getAttribute("movieId");
+    sessionStorage.movieId = movieName;
+    console.log(movieName);
+
+    openFactPage();
+  });
+
+  const factPageButton6 = document.querySelector("#poster6");
+
+  factPageButton6.addEventListener('click', function () {
+    movieName = document.querySelector("#poster6").getAttribute("movieId");
+    sessionStorage.movieId = movieName;
+    console.log(movieName);
+
+    openFactPage();
+  });
+
+  const factPageButton7 = document.querySelector("#poster7");
+
+  factPageButton7.addEventListener('click', function () {
+    movieName = document.querySelector("#poster7").getAttribute("movieId");
+    sessionStorage.movieId = movieName;
+    console.log(movieName);
+
+    openFactPage();
+  });
+
+  const factPageButton8 = document.querySelector("#poster8");
+
+  factPageButton8.addEventListener('click', function () {
+    movieName = document.querySelector("#poster8").getAttribute("movieId");
+    sessionStorage.movieId = movieName;
+    console.log(movieName);
+
+    openFactPage();
+  });
+
+  const factPageButton9 = document.querySelector("#poster9");
+
+  factPageButton9.addEventListener('click', function () {
+    movieName = document.querySelector("#poster9").getAttribute("movieId");
+    sessionStorage.movieId = movieName;
+    console.log(movieName);
+
+    openFactPage();
+  });
+
 
 
   // const title = document.querySelector(".display1");
