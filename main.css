@@ -43,11 +43,26 @@ body {
   }
 }
 
-#main-poster-container {
+.home-btn {
+  position: absolute;
+  top: 10vh;
+  right: 15vw;
+  width: 70px;
+  height: auto;
+}
+
+.home-btn:hover {
+  cursor: pointer;
+}
+
+.main-poster-container {
   position: relative;
-  opacity: 0;
   width: 100vw;
   height: 100vh;
+}
+
+.fade-in {
+  opacity: 0;
   animation: appear;
   animation-delay: 4s;
   animation-duration: 250ms;
@@ -166,7 +181,7 @@ body {
   transform: translateY(-50%);
 } */
 
-/* ====================== FACT PAGE STYLING ============================== */
+/* ====================== TRAILER PAGE STYLING ============================== */
 
 #trailer-page-stage {
   width: 80vw;
@@ -213,4 +228,16 @@ iframe #trailer-jedi {
 
 #trailer-rise {
   display: none;
+}
+
+/* ============================  FACT PAGE STYLING  ============================= */
+
+#fact-page-stage {
+  width: 80vw;
+  height: 80vh;
+  margin-top: 50px;
+  border-top: 12px solid rgba(255, 255, 255, 0.6);
+  border-right: 12px solid rgba(255, 255, 255, 0.2);
+  border-left: 12px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 12px solid rgba(255, 255, 255, 0.25);
 }
