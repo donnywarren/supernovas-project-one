@@ -11,6 +11,29 @@ body {
   font-family: 'News Cycle', sans-serif;
 }
 
+.fade-in-now {
+  opacity: 0;
+  -webkit-animation: appearNow;
+  -moz-animation: appearNow;
+  animation: appearNow;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appearNow {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .hero-logo {
   z-index: 100;
@@ -94,7 +117,6 @@ body {
     opacity: 1;
   }
 }
-
 
 
 .poster {
