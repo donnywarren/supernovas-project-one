@@ -1,13 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  // ================ open pages ==================
+
+  openHomePage = () => {
+    window.location = "home-page.html";
+  }
 
   openTrailerPage = () => {
     window.location = "trailer-page.html";
   }
 
-  openHomePage = () => {
-    window.location = "home-page.html";
+  openPeoplePage = () => {
+    window.location = "people-page.html";
   }
+
+  openStarshipPage = () => {
+    window.location = "starship-page.html";
+  }
+
+  // =============== setup buttons ================
 
   const homeButton = document.querySelector(".home-btn");
 
@@ -19,6 +30,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   trailerButton.addEventListener('click', function () {
     openTrailerPage();
+  })
+
+  const peopleButton = document.querySelector(".people");
+
+  peopleButton.addEventListener('click', function () {
+    openPeoplePage();
+  })
+
+  const starshipButton = document.querySelector(".starship");
+
+  starshipButton.addEventListener('click', function () {
+    openStarshipPage();
   })
 
   // =============  instal poster  ================

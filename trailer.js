@@ -10,24 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const homeButton = document.querySelector(".home-btn");
 
-  homeButton.addEventListener('click', function (event) {
-    // event.preventDefault();
+  homeButton.addEventListener('click', function () {
     openHomePage();
   });
 
 
-  // sessionStorage.movieId = test;
-  console.log(sessionStorage.movieId)
-
-
-
   const currentVideo = document.querySelector(`#${sessionStorage.movieId}`)
-
-
-  console.log(currentVideo);
-
-
-  // document.onload = function () { myFunction() };
 
   function playVideo() {
     currentVideo.setAttribute("style", "display: inherit;")
