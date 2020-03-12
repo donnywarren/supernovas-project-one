@@ -21,28 +21,16 @@ document.addEventListener('DOMContentLoaded', function () {
     openTrailerPage();
   })
 
+  // =============  instal poster  ================
 
-  const posterSource = sessionStorage.posterUrl
-  const currentPoster = document.querySelector("#current-poster")
-
-  console.log(posterSource);
+  const posterSource = sessionStorage.posterUrl;
+  const currentPoster = document.querySelector("#current-poster");
 
   function instalPoster() {
     currentPoster.setAttribute("src", `${posterSource}`)
   }
 
   instalPoster();
-
-  // instalPoster();
-
-
-  // ============ poster ========
-
-
-  // https://image.tmdb.org/t/p/w500/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg
-
-
-  // ============================
 
 
   // ============  moviedb resources  ===========
@@ -55,32 +43,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ============================================
 
+  // ============  load fact data ===================
+
+  let movieNumber = sessionStorage.index;
+  let title = document.querySelector(".fact-page-title");
+  let release = document.querySelector(".fact-page-year");
+  let overview = document.querySelector(".fact-page-overview");
+  let homePageUrl = document.querySelector("#home-page-url");
+  let axiosEndPoint = `https://api.themoviedb.org/3/movie/${movieNumber}?api_key=8d021868bbab84ae4f9d16fdc0645e0c&language=en-US`
 
 
-  // let title = document.querySelector(".display1");
-  // let overview = document.querySelector(".display2");
-  // let posterUrl = document.querySelector(".display3");
-  // let movieId = document.querySelector(".display4");
+  console.log(axiosEndPoint);
 
 
 
-  const apiTester = async () => {
+
+  const apiFetcher1 = async () => {
 
 
     //   // const response = await axios.get("https://api.themoviedb.org/3/movie/550?api_key=8d021868bbab84ae4f9d16fdc0645e0c");
 
-    const response = await axios.get("https://api.themoviedb.org/3/search/movie?api_key=8d021868bbab84ae4f9d16fdc0645e0c&query=star+wars");
+    const response = await axios.get(axiosEndPoint);
 
-    console.log(response.data);
+    // console.log(response.data);
 
-    //   const title = document.querySelector(".display1");
-    //   const overview = document.querySelector(".display2");
-    //   const posterUrl = document.querySelector(".display3");
-    //   const movieId = document.querySelector(".display4");
-    //   title.innerHTML += response.data.results[5].title;
-    //   overview.innerHTML += response.data.results[5].overview;
-    //   posterUrl.innerHTML += response.data.results[5].poster_path;
-    //   movieId.innerHTML += response.data.results[5].id;
+    title.innerHTML = response.data.title;
+    release.innerHTML = `Release Date: ${response.data.release_date}`;
+    overview.innerHTML = response.data.overview;
+
+    console.log(response.data.homepage);
+
+    if (response.data.homepage === "") {
+      homePageUrl.innerHTML = "https://www.starwars.com/films/star-wars-episode-ii-attack-of-the-clones";
+      homePageUrl.setAttribute("href", "https://www.starwars.com/films/star-wars-episode-ii-attack-of-the-clones")
+    } else {
+      homePageUrl.innerHTML = response.data.homepage;
+      homePageUrl.setAttribute("href", `${response.data.homepage}`)
+    };
 
 
     //   // https://api.themoviedb.org/3/movie/{movie_id}/images?api_key=8d021868bbab84ae4f9d16fdc0645e0c&language=en-US
@@ -93,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   };
 
-  apiTester();
+  apiFetcher1();
 
 
   // ==============================  ONLOAD CLOSING BRACKET BELOW  =================================

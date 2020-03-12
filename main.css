@@ -289,21 +289,36 @@ iframe #trailer-jedi {
   width: 40vw;
   height: 60vh;
   color: #ffffff;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
-#fact-page-title {
+.text-box {
+  /* border: 1px solid white; */
+  padding: 10px 0;
+  text-align: center;
 }
 
-#fact-page-year {
+.fact-page-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.fact-page-year {
 
 }
 
-#fact-page-overview {
+.fact-page-overview {
+  font-size: 1.5rem;
+  line-height: 2rem;
 
 }
 
-#fact-page-homepage {
+#home-page-url {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fact-page-homepage {
 
 }
 

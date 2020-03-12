@@ -23,9 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     posterSource = document.querySelector("#poster1").getAttribute("src");
     sessionStorage.movieId = movieName;
     sessionStorage.posterUrl = posterSource;
-    // console.log(sessionStorage.posterUrl)
-    // console.log(posterSource);
-    // console.log(movieName);
+    sessionStorage.index = 11;
 
     openFactPage();
   });
@@ -37,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     posterSource = document.querySelector("#poster2").getAttribute("src");
     sessionStorage.movieId = movieName;
     sessionStorage.posterUrl = posterSource;
-    console.log(movieName);
+    sessionStorage.index = 1891;
 
     openFactPage();
   });
@@ -49,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     posterSource = document.querySelector("#poster3").getAttribute("src");
     sessionStorage.movieId = movieName;
     sessionStorage.posterUrl = posterSource;
-    console.log(movieName);
+    sessionStorage.index = 1892;
 
     openFactPage();
   });
@@ -61,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     posterSource = document.querySelector("#poster4").getAttribute("src");
     sessionStorage.movieId = movieName;
     sessionStorage.posterUrl = posterSource;
-    console.log(movieName);
+    sessionStorage.index = 1893;
 
     openFactPage();
   });
@@ -73,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     posterSource = document.querySelector("#poster5").getAttribute("src");
     sessionStorage.movieId = movieName;
     sessionStorage.posterUrl = posterSource;
-    console.log(movieName);
+    sessionStorage.index = 1894;
 
     openFactPage();
   });
@@ -85,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     posterSource = document.querySelector("#poster6").getAttribute("src");
     sessionStorage.movieId = movieName;
     sessionStorage.posterUrl = posterSource;
-    console.log(movieName);
+    sessionStorage.index = 1895;
 
     openFactPage();
   });
@@ -97,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
     posterSource = document.querySelector("#poster7").getAttribute("src");
     sessionStorage.movieId = movieName;
     sessionStorage.posterUrl = posterSource;
-    console.log(movieName);
+    sessionStorage.index = 140607;
 
     openFactPage();
   });
@@ -109,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     posterSource = document.querySelector("#poster8").getAttribute("src");
     sessionStorage.movieId = movieName;
     sessionStorage.posterUrl = posterSource;
-    console.log(movieName);
+    sessionStorage.index = 181808;
 
     openFactPage();
   });
@@ -121,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
     posterSource = document.querySelector("#poster9").getAttribute("src");
     sessionStorage.movieId = movieName;
     sessionStorage.posterUrl = posterSource;
-    console.log(movieName);
+    sessionStorage.index = 181812;
 
     openFactPage();
   });
