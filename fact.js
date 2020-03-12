@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ============================================
 
+
+
   // ============  load fact data ===================
 
   let movieNumber = sessionStorage.index;
@@ -53,25 +55,13 @@ document.addEventListener('DOMContentLoaded', function () {
   let axiosEndPoint = `https://api.themoviedb.org/3/movie/${movieNumber}?api_key=8d021868bbab84ae4f9d16fdc0645e0c&language=en-US`
 
 
-  console.log(axiosEndPoint);
-
-
-
-
   const apiFetcher1 = async () => {
 
-
-    //   // const response = await axios.get("https://api.themoviedb.org/3/movie/550?api_key=8d021868bbab84ae4f9d16fdc0645e0c");
-
     const response = await axios.get(axiosEndPoint);
-
-    // console.log(response.data);
 
     title.innerHTML = response.data.title;
     release.innerHTML = `Release Date: ${response.data.release_date}`;
     overview.innerHTML = response.data.overview;
-
-    console.log(response.data.homepage);
 
     if (response.data.homepage === "") {
       homePageUrl.innerHTML = "https://www.starwars.com/films/star-wars-episode-ii-attack-of-the-clones";
@@ -80,11 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
       homePageUrl.innerHTML = response.data.homepage;
       homePageUrl.setAttribute("href", `${response.data.homepage}`)
     };
-
-
-    //   // https://api.themoviedb.org/3/movie/{movie_id}/images?api_key=8d021868bbab84ae4f9d16fdc0645e0c&language=en-US
-
-    //   // https://image.tmdb.org/t/p/w500/mMZRKb3NVo5ZeSPEIaNW9buLWQ0.jpg
 
     const response2 = await axios.get("https://swapi.co/api/starships/");
 

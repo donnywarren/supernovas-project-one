@@ -15,14 +15,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   let movieName;
+  let posterSource;
 
 
   const factPageButton1 = document.querySelector("#poster1");
 
   factPageButton1.addEventListener('click', function () {
     movieName = document.querySelector("#poster1").getAttribute("movieId");
+    posterSource = document.querySelector("#poster1").getAttribute("src");
     sessionStorage.movieId = movieName;
-    console.log(movieName);
+    sessionStorage.posterUrl = posterSource;
+    sessionStorage.index = 11;
 
     openFactPage();
   });
@@ -31,8 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton2.addEventListener('click', function () {
     movieName = document.querySelector("#poster2").getAttribute("movieId");
+    posterSource = document.querySelector("#poster2").getAttribute("src");
     sessionStorage.movieId = movieName;
-    console.log(movieName);
+    sessionStorage.posterUrl = posterSource;
+    sessionStorage.index = 1891;
 
     openFactPage();
   });
@@ -41,8 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton3.addEventListener('click', function () {
     movieName = document.querySelector("#poster3").getAttribute("movieId");
+    posterSource = document.querySelector("#poster3").getAttribute("src");
     sessionStorage.movieId = movieName;
-    console.log(movieName);
+    sessionStorage.posterUrl = posterSource;
+    sessionStorage.index = 1892;
 
     openFactPage();
   });
@@ -51,8 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton4.addEventListener('click', function () {
     movieName = document.querySelector("#poster4").getAttribute("movieId");
+    posterSource = document.querySelector("#poster4").getAttribute("src");
     sessionStorage.movieId = movieName;
-    console.log(movieName);
+    sessionStorage.posterUrl = posterSource;
+    sessionStorage.index = 1893;
 
     openFactPage();
   });
@@ -61,8 +70,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton5.addEventListener('click', function () {
     movieName = document.querySelector("#poster5").getAttribute("movieId");
+    posterSource = document.querySelector("#poster5").getAttribute("src");
     sessionStorage.movieId = movieName;
-    console.log(movieName);
+    sessionStorage.posterUrl = posterSource;
+    sessionStorage.index = 1894;
 
     openFactPage();
   });
@@ -71,8 +82,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton6.addEventListener('click', function () {
     movieName = document.querySelector("#poster6").getAttribute("movieId");
+    posterSource = document.querySelector("#poster6").getAttribute("src");
     sessionStorage.movieId = movieName;
-    console.log(movieName);
+    sessionStorage.posterUrl = posterSource;
+    sessionStorage.index = 1895;
 
     openFactPage();
   });
@@ -81,8 +94,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton7.addEventListener('click', function () {
     movieName = document.querySelector("#poster7").getAttribute("movieId");
+    posterSource = document.querySelector("#poster7").getAttribute("src");
     sessionStorage.movieId = movieName;
-    console.log(movieName);
+    sessionStorage.posterUrl = posterSource;
+    sessionStorage.index = 140607;
 
     openFactPage();
   });
@@ -91,8 +106,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton8.addEventListener('click', function () {
     movieName = document.querySelector("#poster8").getAttribute("movieId");
+    posterSource = document.querySelector("#poster8").getAttribute("src");
     sessionStorage.movieId = movieName;
-    console.log(movieName);
+    sessionStorage.posterUrl = posterSource;
+    sessionStorage.index = 181808;
 
     openFactPage();
   });
@@ -101,62 +118,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton9.addEventListener('click', function () {
     movieName = document.querySelector("#poster9").getAttribute("movieId");
+    posterSource = document.querySelector("#poster9").getAttribute("src");
     sessionStorage.movieId = movieName;
-    console.log(movieName);
+    sessionStorage.posterUrl = posterSource;
+    sessionStorage.index = 181812;
 
     openFactPage();
   });
 
 
-
-  // const title = document.querySelector(".display1");
-  // const overview = document.querySelector(".display2");
-  // const posterUrl = document.querySelector(".display3");
-  // const movieId = document.querySelector(".display4");
-
-
-
-  // const apiTester = async () => {
-
-
-  //   // const response = await axios.get("https://api.themoviedb.org/3/movie/550?api_key=8d021868bbab84ae4f9d16fdc0645e0c");
-
-  //   const response = await axios.get("https://api.themoviedb.org/3/search/movie?api_key=8d021868bbab84ae4f9d16fdc0645e0c&query=star+wars");
-
-  //   // console.log(response.data);
-
-  //   const title = document.querySelector(".display1");
-  //   const overview = document.querySelector(".display2");
-  //   const posterUrl = document.querySelector(".display3");
-  //   const movieId = document.querySelector(".display4");
-  //   title.innerHTML += response.data.results[5].title;
-  //   overview.innerHTML += response.data.results[5].overview;
-  //   posterUrl.innerHTML += response.data.results[5].poster_path;
-  //   movieId.innerHTML += response.data.results[5].id;
-
-
-  //   // https://api.themoviedb.org/3/movie/{movie_id}/images?api_key=8d021868bbab84ae4f9d16fdc0645e0c&language=en-US
-
-  //   // https://image.tmdb.org/t/p/w500/mMZRKb3NVo5ZeSPEIaNW9buLWQ0.jpg
-
-  //   const response2 = await axios.get("https://swapi.co/api/starships/");
-
-  //   console.log(response2.data);
-
-  // };
-
-  // apiTester();
-
-
-
-  // const trailerHomeButton = document.querySelector("#home-btn");
-
-  // trailerHomeButton.addEventListener('click', function (event) {
-  //   event.preventDefault();
-  //   let changeAttribute = document.querySelector("#trailer-last-jedi");
-  //   changeAttribute.setAttribute("style", "initial");
-
-  // });
 
 
   // ==============================  ONLOAD CLOSING BRACKET BELOW  =================================
