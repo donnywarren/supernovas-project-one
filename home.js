@@ -13,12 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   let movieName;
+  let posterSource;
 
 
   const factPageButton1 = document.querySelector("#poster1");
 
   factPageButton1.addEventListener('click', function () {
     movieName = document.querySelector("#poster1").getAttribute("movieId");
+
     sessionStorage.movieId = movieName;
     console.log(movieName);
 
