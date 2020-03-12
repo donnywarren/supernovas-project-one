@@ -15,11 +15,25 @@ document.addEventListener('DOMContentLoaded', function () {
     openHomePage();
   });
 
-  const trailerButton = document.querySelector(".trailer-page-button");
+  const trailerButton = document.querySelector(".trailer");
 
   trailerButton.addEventListener('click', function () {
     openTrailerPage();
   })
+
+
+  const posterSource = sessionStorage.posterUrl
+  const currentPoster = document.querySelector("#current-poster")
+
+  console.log(posterSource);
+
+  function instalPoster() {
+    currentPoster.setAttribute("src", `${posterSource}`)
+  }
+
+  instalPoster();
+
+  // instalPoster();
 
 
   // ============ poster ========

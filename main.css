@@ -258,22 +258,60 @@ iframe #trailer-jedi {
   border-bottom: 12px solid rgba(255, 255, 255, 0.25);
 }
 
-.fact-page-poster-container {
+#fact-page-complete-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  /* background-color: blue; */
+}
+
+#fact-page-poster-info-flex-container {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .fact-page-poster-div {
-  width: 15vw;
-  height: calc(15vw * 1.5);
+  width: 20vw;
+  /* height: calc(25vw * 1.5); */
+  height: auto;
   min-width: 100px;
   min-height: 150px;
+  background: 1px solid white;
+}
+
+#fact-page-information-container {
+  width: 40vw;
+  height: 60vh;
+  color: #ffffff;
+  border: 1px solid white;
+}
+
+#fact-page-title {
+}
+
+#fact-page-year {
+
+}
+
+#fact-page-overview {
+
+}
+
+#fact-page-homepage {
+
 }
 
 #fact-page-button-container {
   display: flex;
   justify-content: space-evenly;
   width: 80vw;
+  margin-bottom: 3vh;
 }
 
 .fact-page-button {

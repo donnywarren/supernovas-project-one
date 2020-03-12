@@ -20,9 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton1.addEventListener('click', function () {
     movieName = document.querySelector("#poster1").getAttribute("movieId");
-
+    posterSource = document.querySelector("#poster1").getAttribute("src");
     sessionStorage.movieId = movieName;
-    console.log(movieName);
+    sessionStorage.posterUrl = posterSource;
+    // console.log(sessionStorage.posterUrl)
+    // console.log(posterSource);
+    // console.log(movieName);
 
     openFactPage();
   });
@@ -31,7 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton2.addEventListener('click', function () {
     movieName = document.querySelector("#poster2").getAttribute("movieId");
+    posterSource = document.querySelector("#poster2").getAttribute("src");
     sessionStorage.movieId = movieName;
+    sessionStorage.posterUrl = posterSource;
     console.log(movieName);
 
     openFactPage();
@@ -41,7 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton3.addEventListener('click', function () {
     movieName = document.querySelector("#poster3").getAttribute("movieId");
+    posterSource = document.querySelector("#poster3").getAttribute("src");
     sessionStorage.movieId = movieName;
+    sessionStorage.posterUrl = posterSource;
     console.log(movieName);
 
     openFactPage();
@@ -51,7 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton4.addEventListener('click', function () {
     movieName = document.querySelector("#poster4").getAttribute("movieId");
+    posterSource = document.querySelector("#poster4").getAttribute("src");
     sessionStorage.movieId = movieName;
+    sessionStorage.posterUrl = posterSource;
     console.log(movieName);
 
     openFactPage();
@@ -61,7 +70,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton5.addEventListener('click', function () {
     movieName = document.querySelector("#poster5").getAttribute("movieId");
+    posterSource = document.querySelector("#poster5").getAttribute("src");
     sessionStorage.movieId = movieName;
+    sessionStorage.posterUrl = posterSource;
     console.log(movieName);
 
     openFactPage();
@@ -71,7 +82,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton6.addEventListener('click', function () {
     movieName = document.querySelector("#poster6").getAttribute("movieId");
+    posterSource = document.querySelector("#poster6").getAttribute("src");
     sessionStorage.movieId = movieName;
+    sessionStorage.posterUrl = posterSource;
     console.log(movieName);
 
     openFactPage();
@@ -81,7 +94,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton7.addEventListener('click', function () {
     movieName = document.querySelector("#poster7").getAttribute("movieId");
+    posterSource = document.querySelector("#poster7").getAttribute("src");
     sessionStorage.movieId = movieName;
+    sessionStorage.posterUrl = posterSource;
     console.log(movieName);
 
     openFactPage();
@@ -91,7 +106,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton8.addEventListener('click', function () {
     movieName = document.querySelector("#poster8").getAttribute("movieId");
+    posterSource = document.querySelector("#poster8").getAttribute("src");
     sessionStorage.movieId = movieName;
+    sessionStorage.posterUrl = posterSource;
     console.log(movieName);
 
     openFactPage();
@@ -101,7 +118,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   factPageButton9.addEventListener('click', function () {
     movieName = document.querySelector("#poster9").getAttribute("movieId");
+    posterSource = document.querySelector("#poster9").getAttribute("src");
     sessionStorage.movieId = movieName;
+    sessionStorage.posterUrl = posterSource;
     console.log(movieName);
 
     openFactPage();
