@@ -391,10 +391,6 @@ iframe #trailer-jedi {
   /* ======= fact page ======= */
   
   #fact-page-complete-content {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; */
     display: initial;
     width: 80vw;
     height: 80vh;
@@ -406,17 +402,12 @@ iframe #trailer-jedi {
   }
   
   #fact-page-poster-info-flex-container {
-    /* width: 80vw;
-    height: 80vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; */
     display: initial;
   }
   
   .fact-page-poster-div {
     margin: 2vh 0 0 4vw;
-    width: 20vw;
+    width: 35vw;
     height: auto;
     min-width: 100px;
     min-height: 150px;
@@ -429,10 +420,6 @@ iframe #trailer-jedi {
     color: #ffffff;
   }
   
-  .text-box {
-    padding: 10px 0;
-    text-align: center;
-  }
   
   .fact-page-title {
     font-size: 3rem;
@@ -441,31 +428,27 @@ iframe #trailer-jedi {
   }
   
   .fact-page-overview {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
     padding: 12px;
     text-align: justify;
   }
   
   #home-page-url {
-    text-decoration: none;
-    color: #ffffff;
+    font-size: .8rem;
   }
   
-  
   #fact-page-button-container {
-    display: flex;
-    justify-content: space-evenly;
+    position: absolute;
     width: 90vw;
-    margin-bottom: 3vh;
+    top:85vh;
+    left:auto;
+    right:auto;
   }
   
   .fact-page-button {
     width: 13vw;
-    color: #ffffff;
     letter-spacing: 1px;
-    font-weight: bold;
-    text-align: center;
     font-size: .6rem;
   }
   
@@ -474,12 +457,13 @@ iframe #trailer-jedi {
 }
 
 @media only screen and (max-width: 370px){
+
+.fact-page-poster-div {
+  margin: 2vh 0 0 4vw;
+  width: 30vw;
+  height: auto;
+}
   
-  .poster div {
-    margin: 2vh 0 0 4vw;
-    width: 500px;
-    height: auto;
-  }
 
 a {
   font-size: .75rem;
