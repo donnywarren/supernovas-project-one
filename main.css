@@ -353,6 +353,39 @@ iframe #trailer-jedi {
 
 @media only screen and (max-width: 600px){
 
+  .hero-logo {
+    z-index: 100;
+    position: absolute;
+    display:flex;
+    opacity: 0;
+    width: 130%;
+    height: auto;
+    margin-top: -5%;
+    -webkit-animation: disappear;
+    -moz-animation: disappear;
+    animation: disappear;
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  @keyframes disappear {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      width: 1px;
+      height: 1px;
+      margin-top: 25%;
+      opacity: 1;
+    }
+  }
+
   .stage {
     width: 89vw;
     height: 83vh;
