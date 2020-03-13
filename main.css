@@ -114,11 +114,22 @@ body {
 .home-btn:hover {
   cursor: pointer;
 }
-
+/* 
 .main-poster-container {
   position: relative;
   width: 100vw;
   height: 100vh;
+} */
+
+.main-poster-container {
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  margin: 6vh;
 }
 
 .fade-in {
@@ -157,23 +168,40 @@ body {
 }
 
 .poster-div {
-  position: absolute;
-  width: 15vw;
-  height: calc(15vw * 1.5);
+  /* position: absolute; */
+  /* width: 15vw;
+  height: calc(15vw * 1.5); */
+  width: 200px;
+  height: 300px;
+  max-width: 200px;
+  max-height: 300px;
   min-width: 100px;
   min-height: 150px;
+  margin: 10px;
 
 }
 
-.poster-div:hover {
+#poster1:hover, #poster2:hover, #poster3:hover, #poster4:hover, #poster5:hover, #poster6:hover, #poster7:hover, #poster8:hover, #poster9:hover {
+  width: 220px;
+  height: 330px;
+  /* max-width: 17vw;
+  max-height: calc(17vw * 1.5); */
+  cursor: pointer;
+  transform: translate(-10px, -15px);
+  /* z-index: 500; */
+}
+
+/* .poster-div:hover {
   width: 17vw;
   height: calc(17vw * 1.5);
+  max-width: 17vw;
+  max-height: calc(17vw * 1.5);
   cursor: pointer;
   transform: translate(-10px, -30px);
   z-index: 500;
-}
+} */
 
-
+/* 
 .poster1-container {
   top:6.25vh;
   left: 3.42vw;
@@ -218,7 +246,7 @@ body {
 .poster9-container {
   top: 53vh;
   left: 77vw;
-}
+} */
 
 
 
@@ -414,8 +442,13 @@ iframe #trailer-jedi {
   transform: translateX(-50%);
 }
 
-
-
-
-
 /* ================= STARSHIP PAGE STYLING ================== */
+
+
+/* =================== MEDIA QUERIES ======================== */
+
+@media only screen and (max-width: 1024px){
+
+
+
+}
