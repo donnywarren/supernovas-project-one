@@ -355,131 +355,139 @@ iframe #trailer-jedi {
 
 @media only screen and (max-width: 600px){
 
-.stage {
-  width: 90vw;
-  height: 90vh;
-  margin-top: 25px;
-  border-top: 8px solid rgba(255, 255, 255, 0.6);
-  border-right: 8px solid rgba(255, 255, 255, 0.2);
-  border-left: 8px solid rgba(255, 255, 255, 0.4);
-  border-bottom: 8px solid rgba(255, 255, 255, 0.25);
+  .stage {
+    width: 90vw;
+    height: 90vh;
+    margin-top: 25px;
+    border-top: 8px solid rgba(255, 255, 255, 0.6);
+    border-right: 8px solid rgba(255, 255, 255, 0.2);
+    border-left: 8px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 8px solid rgba(255, 255, 255, 0.25);
+  }
+  
+  .choose {
+    display: inherit;
+  }
+  
+  .main-poster-container {
+    display:initial;
+    width: 100vw;
+    height: 100vh;
+    margin: 3vh;
+  }
+  
+  .poster-div {
+    width: 90vw;
+    height: calc(90vw * 1.5);
+    margin: 20px auto;
+  }
+  
+  .poster:hover {
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+    transform: translate(0, 0);
+  }
+  /* ======= fact page ======= */
+  
+  #fact-page-complete-content {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; */
+    display: initial;
+    width: 80vw;
+    height: 80vh;
+  }
+  
+  .fact-page-logo {
+    top: 13vh;
+    right: 16vw;
+  }
+  
+  #fact-page-poster-info-flex-container {
+    /* width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    display: initial;
+  }
+  
+  .fact-page-poster-div {
+    margin: 2vh 0 0 4vw;
+    width: 20vw;
+    height: auto;
+    min-width: 100px;
+    min-height: 150px;
+  }
+  
+  #fact-page-information-container {
+    display: initial;
+    width: 40vw;
+    height: 60vh;
+    color: #ffffff;
+  }
+  
+  .text-box {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .fact-page-title {
+    font-size: 3rem;
+    font-weight: 900;
+    width: 90vw;
+  }
+  
+  .fact-page-overview {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding: 12px;
+    text-align: justify;
+  }
+  
+  #home-page-url {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  
+  #fact-page-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin-bottom: 3vh;
+  }
+  
+  .fact-page-button {
+    width: 13vw;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    font-size: .6rem;
+  }
+  
+
+
 }
 
-.choose {
-  display: inherit;
-}
+@media only screen and (max-width: 370px){
+  
+  .poster div {
+    margin: 2vh 0 0 4vw;
+    width: 500px;
+    height: auto;
+  }
 
-.main-poster-container {
-  display:initial;
-  width: 100vw;
-  height: 100vh;
-  margin: 3vh;
-}
-
-.poster-div {
-  width: 90vw;
-  height: calc(90vw * 1.5);
-  margin: 20px auto;
-}
-
-.poster:hover {
-  width: inherit;
-  height: inherit;
-  cursor: pointer;
-  transform: translate(0, 0);
-}
-/* ======= fact page ======= */
-
-#fact-page-complete-content {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center; */
-  display: initial;
-  width: 80vw;
-  height: 80vh;
-}
-
-.fact-page-logo {
-  top: 13vh;
-  right: 16vw;
-}
-
-#fact-page-poster-info-flex-container {
-  /* width: 80vw;
-  height: 80vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; */
-  display: initial;
-}
-
-.fact-page-poster-div {
-  margin: 2vh 0 0 4vw;
-  width: 20vw;
-  height: auto;
-  min-width: 100px;
-  min-height: 150px;
-}
-
-#fact-page-information-container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start; */
-  display: initial;
-  width: 40vw;
-  height: 60vh;
-  color: #ffffff;
-}
-
-.text-box {
-  padding: 10px 0;
-  text-align: center;
-}
-
-.fact-page-title {
-  /* align-self: flex-start; */
-  font-size: 3rem;
-  font-weight: 900;
-  width: 90vw;
+a {
+  font-size: .75rem;
 }
 
 .fact-page-overview {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  padding: 12px;
-  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
-
-#home-page-url {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-
-#fact-page-button-container {
-  display: flex;
-  justify-content: space-evenly;
-  width: 90vw;
-  margin-bottom: 3vh;
-}
-
-.fact-page-button {
-  width: 13vw;
-  color: #ffffff;
-  letter-spacing: 1px;
-  font-weight: bold;
-  text-align: center;
-  font-size: .6rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.fact-page-button:hover {
-  background-color: rgba(250, 250, 4, 0.4);
-}
-
-
-
+  
 }
