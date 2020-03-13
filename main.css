@@ -359,7 +359,7 @@ iframe #trailer-jedi {
     display:flex;
     opacity: 0;
     width: 130%;
-    height: 130%;
+    height: 110%;
     margin-top: -5%;
     -webkit-animation: disappear;
     -moz-animation: disappear;
