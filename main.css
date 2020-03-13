@@ -257,7 +257,7 @@ iframe #trailer-jedi {
 #current-poster.poster:hover {
   width: inherit;
   height: inherit;
-  cursor: pointer;
+  cursor: initial;
   transform: translate(0, 0);
 }
 
@@ -424,7 +424,7 @@ iframe #trailer-jedi {
   .poster:hover {
     width: inherit;
     height: inherit;
-    cursor: pointer;
+    cursor: initial;
     transform: translate(0, 0);
   }
   /* ======= fact page ======= */
