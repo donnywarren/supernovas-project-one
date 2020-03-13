@@ -168,7 +168,7 @@ body {
   margin: 10px;
 }
 
-#poster1:hover, #poster2:hover, #poster3:hover, #poster4:hover, #poster5:hover, #poster6:hover, #poster7:hover, #poster8:hover, #poster9:hover {
+.poster:hover {
   width: 220px;
   height: 330px;
   cursor: pointer;
@@ -360,6 +360,13 @@ iframe #trailer-jedi {
   width: 300px;
   height: 450px;
   margin: 20px;
+}
+
+.poster:hover {
+  width: 330px;
+  height: 494px;
+  cursor: pointer;
+  transform: translate(-15px, -22px);
 }
 
 
