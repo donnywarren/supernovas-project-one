@@ -379,8 +379,8 @@ iframe #trailer-jedi {
     }
   
     100% {
-      width: 1px;
-      height: auto;
+      width: 0;
+      height: 0;
       margin-top: 25%;
       opacity: 1;
     }
