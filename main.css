@@ -60,7 +60,7 @@ body {
   position: absolute;
   display:flex;
   opacity: 0;
-  width: 120%;
+  width: 130%;
   height: auto;
   margin-top: -5%;
   -webkit-animation: disappear;
@@ -84,7 +84,8 @@ body {
   }
 
   100% {
-    width: 0;
+    width: 1px;
+    height: auto;
     margin-top: 25%;
     opacity: 1;
   }
