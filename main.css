@@ -254,6 +254,13 @@ iframe #trailer-jedi {
   min-height: 150px;
 }
 
+#current-poster.poster:hover {
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+  transform: translate(0, 0);
+}
+
 #fact-page-information-container {
   display: flex;
   flex-direction: column;
@@ -361,12 +368,13 @@ iframe #trailer-jedi {
     width: 130%;
     height: 110%;
     margin-top: -5%;
+    transition-timing-function: ease-in;
     -webkit-animation: disappear;
     -moz-animation: disappear;
     animation: disappear;
-    -webkit-animation-duration: 4s;
-    -moz-animation-duration: 4s;
-    animation-duration: 4s;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    animation-duration: 5s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
