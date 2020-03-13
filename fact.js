@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', function () {
     overview.innerHTML = response.data.overview;
 
     if (response.data.homepage === "") {
-      homePageUrl.innerHTML = "https://www.starwars.com/films/star-wars-episode-ii-attack-of-the-clones";
+      homePageUrl.innerHTML += "https://www.starwars.com/films/star-wars-episode-ii-attack-of-the-clones";
       homePageUrl.setAttribute("href", "https://www.starwars.com/films/star-wars-episode-ii-attack-of-the-clones")
     } else {
-      homePageUrl.innerHTML = response.data.homepage;
+      homePageUrl.innerHTML += response.data.homepage;
       homePageUrl.setAttribute("href", `${response.data.homepage}`)
     };
 
