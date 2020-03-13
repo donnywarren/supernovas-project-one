@@ -137,9 +137,9 @@ body {
   -webkit-animation: appear;
   -moz-animation: appear;
   animation: appear;
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
   -webkit-animation-duration: 250ms;
   -moz-animation-duration: 250ms;
   animation-duration: 250ms;
@@ -354,6 +354,24 @@ iframe #trailer-jedi {
 /* =================== MEDIA QUERIES ======================== */
 
 @media only screen and (max-width: 1024px){
+
+  #fact-page-complete-conten {
+    position: relative;
+  }
+  #fact-page-poster-info-flex-container{
+    position: relative;
+    height: 80vh;
+    margin-top: 10px;
+  }
+  
+  .fact-page-poster-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2vh 0 0 4vw;
+    width: 30vw;
+    height: auto;
+  }
 
 
 }
