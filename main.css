@@ -81,7 +81,7 @@ body {
   }
 
   100% {
-    width: 1px;
+    width: 0;
     height: auto;
     margin-top: 25%;
     opacity: 1;
