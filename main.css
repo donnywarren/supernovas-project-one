@@ -405,6 +405,12 @@ iframe #trailer-jedi {
   .choose {
     display: inherit;
   }
+
+  #falcon-logo:hover {
+    top: -33px;
+    left:-32px;
+    width: 1600%;
+  }
   
   .main-poster-container {
     display:initial;
@@ -477,7 +483,7 @@ iframe #trailer-jedi {
   #fact-page-button-container {
     position: absolute;
     width: 90vw;
-    top:81vh;
+    top:80vh;
     left:auto;
     right:auto;
   }
@@ -487,8 +493,6 @@ iframe #trailer-jedi {
     letter-spacing: 1px;
     font-size: .6rem;
   }
-  
-
 
 }
 
