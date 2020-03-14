@@ -394,8 +394,8 @@ iframe #trailer-jedi {
 
   .stage {
     width: 89vw;
-    height: 83vh;
-    margin-top: 24px;
+    height: 82vh;
+    margin-top: 22px;
     border-top: 8px solid rgba(255, 255, 255, 0.6);
     border-right: 8px solid rgba(255, 255, 255, 0.2);
     border-left: 8px solid rgba(255, 255, 255, 0.4);
@@ -477,7 +477,7 @@ iframe #trailer-jedi {
   #fact-page-button-container {
     position: absolute;
     width: 90vw;
-    top:82vh;
+    top:81vh;
     left:auto;
     right:auto;
   }
