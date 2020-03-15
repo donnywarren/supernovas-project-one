@@ -6,10 +6,18 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  background-color: #000000;
+  background-image: url(assets/stars-background.png);
+  background-size: cover;
   color: #ff6;
   font-family: 'News Cycle', sans-serif;
 }
+
+/* .stars {
+  position: relative;
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+} */
 
 .choose {
   display: none;
@@ -22,6 +30,7 @@ body {
 
 
 .stage {
+  background-color: #000000;
   width: 80vw;
   height: 80vh;
   margin-top: 50px;
@@ -96,12 +105,27 @@ body {
   height: auto;
 }
 
+.back-btn {
+  position: absolute;
+  top: 14vh;
+  left: 16vw;
+  width: 108px;
+  height: auto;
+}
+
 .button-box {
   position: relative;
 }
 
 #logo {
   width: 100%;
+}
+
+#arrow-logo {
+  width: 90%;
+  position: absolute;
+  left: -48px;
+  top: 0;
 }
 
 #falcon-logo {
@@ -111,14 +135,29 @@ body {
   width: 145%;
 }
 
+#vader-logo {
+  position:absolute;
+  opacity: 0.8;
+  top: -21px;
+  left:-28px;
+  width: 85%;
+  z-index: 100;
+}
+
 #falcon-logo:hover {
-  top: -31px;
-  left:-30px;
-  width: 150%;
+  top: -33px;
+  left:-33px;
+  width: 155%;
+}
+
+#vader-logo:hover {
+  top: -25px;
+  left:-32px;
+  width: 90%;
 }
 
 
-.home-btn:hover {
+.home-btn:hover, .back-btn:hover {
   cursor: pointer;
 }
 
@@ -172,7 +211,7 @@ body {
   height: 300px;
   min-width: 100px;
   min-height: 150px;
-  margin: 10px;
+  margin: 15px;
 }
 
 .poster:hover {
@@ -223,7 +262,7 @@ iframe #trailer-jedi {
   display: none;
 }
 
-/* ============================  FACT PAGE STYLING  ============================= */
+/* ==============================================  FACT PAGE STYLING  ============================= */
 
 
 #fact-page-complete-content {
@@ -276,10 +315,11 @@ iframe #trailer-jedi {
 }
 
 .fact-page-title {
-  align-self: flex-start;
+  /* align-self: flex-start; */
   font-size: 3rem;
   font-weight: 900;
-  width: 35vw;
+  padding-right: 10%;
+  /* width: 35vw; */
 }
 
 .fact-page-overview {
@@ -327,7 +367,7 @@ iframe #trailer-jedi {
 }
 
 
-/* ================= PEOPLE PAGE STYLING ================= */
+/* ================================================ PEOPLE PAGE STYLING ========================= */
 
 .darth-background {
   background-image: url("assets/darthvader-background.jpg");
@@ -348,7 +388,7 @@ iframe #trailer-jedi {
 
 }
 
-/* ================= STARSHIP PAGE STYLING ================== */
+/* =============================================== STARSHIP PAGE STYLING =========================== */
 
 .ship-background {
   background-image: url("assets/rebel-fleet-background.jpg");
@@ -359,9 +399,17 @@ iframe #trailer-jedi {
 }
 
 
-/* =================== MEDIA QUERIES ======================== */
+/* ================================================== MEDIA QUERIES ================================== */
 
 @media only screen and (max-width: 1024px){
+
+  .main-poster-container {
+    justify-content: space-evenly;
+  }  
+
+
+
+}
 
  
 @media only screen and (max-width: 600px){
