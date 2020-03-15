@@ -301,14 +301,14 @@ iframe #trailer-jedi {
   color: #ff6;
 }
 
-#fact-page-button-container {
+#fact-page-button-container, #people-page-button-container {
   display: flex;
   justify-content: space-evenly;
   width: 80vw;
   margin-bottom: 3vh;
 }
 
-.fact-page-button {
+.fact-page-button, .people-page-button, .ship-page-button {
   width: 20vw;
   color: #ffffff;
   letter-spacing: 2px;
@@ -319,36 +319,44 @@ iframe #trailer-jedi {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
-.fact-page-button:hover {
+.fact-page-button:hover, .people-page-button:hover, .ship-page-button:hover {
   background-color: rgba(250, 250, 4, 0.4);
 }
 
 
 /* ================= PEOPLE PAGE STYLING ================= */
 
-.people-page-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+.darth-background {
+  background-image: url("assets/darthvader-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
 }
 
-#people-page-content-container {
-  position: relative;
-}
-#people-page-content-container div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding: 10px 20px;
-  transform: translateX(-50%);
+#people-page-button-container, #ship-page-button-container {
+  width: 100%;
+  height: calc(100% - 195px);
+  margin-top: 145px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+
 }
 
 /* ================= STARSHIP PAGE STYLING ================== */
+
+.ship-background {
+  background-image: url("assets/rebel-fleet-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+}
 
 
 /* =================== MEDIA QUERIES ======================== */
