@@ -1,23 +1,16 @@
 
 
 
-
 body {
   position: relative;
   display: flex;
   justify-content: center;
-  background-image: url(assets/stars-background.png);
+  background-color: #000000;
+  background-image: url(assets/stars-background.png);;
   background-size: cover;
   color: #ff6;
   font-family: 'News Cycle', sans-serif;
 }
-
-/* .stars {
-  position: relative;
-  background-color: red;
-  width: 100vw;
-  height: 100vh;
-} */
 
 .choose {
   display: none;
@@ -27,7 +20,6 @@ body {
   text-align: center;
   padding: 5px;
 }
-
 
 .stage {
   background-color: #000000;
@@ -63,37 +55,42 @@ body {
   }
 }
 
-
 .hero-logo {
   z-index: 100;
   position: absolute;
   display:flex;
   opacity: 0;
-  width: 130%;
-  height: auto;
-  margin-top: -5%;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
   -webkit-animation: disappear;
   -moz-animation: disappear;
   animation: disappear;
-  -webkit-animation-duration: 4s;
-  -moz-animation-duration: 4s;
-  animation-duration: 4s;
+  -webkit-animation-delay: 250ms;
+  -moz-animation-delay: 250ms;
+  animation-delay: 250ms;
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  animation-duration: 6s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-
 
 @keyframes disappear {
   0% {
     opacity: 1;
   }
 
+  50% {
+    opacity: 1;
+  }
+
   100% {
     width: 0;
-    height: auto;
-    margin-top: 25%;
-    opacity: 1;
+    height: 0;
+    margin-top: 20%;
+    opacity: 0;
   }
 }
 
@@ -156,7 +153,6 @@ body {
   width: 90%;
 }
 
-
 .home-btn:hover, .back-btn:hover {
   cursor: pointer;
 }
@@ -197,7 +193,6 @@ body {
   }
 }
 
-
 .poster {
   width: 100%;
   border-top: 4px solid rgba(255, 255, 255, 0.5);
@@ -223,7 +218,8 @@ body {
 
 
 
-/* ====================== TRAILER PAGE STYLING ============================== */
+
+/* ==================================== TRAILER PAGE STYLING ==================================== */
 
 
 iframe #trailer-star-wars {
@@ -261,6 +257,10 @@ iframe #trailer-jedi {
 #trailer-rise {
   display: none;
 }
+
+
+
+
 
 /* ==============================================  FACT PAGE STYLING  ============================= */
 
@@ -315,11 +315,9 @@ iframe #trailer-jedi {
 }
 
 .fact-page-title {
-  /* align-self: flex-start; */
   font-size: 3rem;
   font-weight: 900;
   padding-right: 10%;
-  /* width: 35vw; */
 }
 
 .fact-page-overview {
@@ -367,6 +365,8 @@ iframe #trailer-jedi {
 }
 
 
+
+
 /* ================================================ PEOPLE PAGE STYLING ========================= */
 
 .darth-background {
@@ -385,8 +385,11 @@ iframe #trailer-jedi {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-between;
-
 }
+
+
+
+
 
 /* =============================================== STARSHIP PAGE STYLING =========================== */
 
@@ -399,7 +402,12 @@ iframe #trailer-jedi {
 }
 
 
+
+
+/* =================================================================================================== */
 /* ================================================== MEDIA QUERIES ================================== */
+/* =================================================================================================== */
+
 
 @media only screen and (max-width: 1024px){
 
@@ -457,14 +465,22 @@ iframe #trailer-jedi {
     border-left: 8px solid rgba(255, 255, 255, 0.4);
     border-bottom: 8px solid rgba(255, 255, 255, 0.25);
   }
+
+  .home-btn {
+    top: 10vh;
+  }
+  
+  .back-btn {
+    top: 10vh;
+  }
   
   .choose {
     display: inherit;
   }
 
   #falcon-logo:hover {
-    top: -33px;
-    left:-32px;
+    top: -35px;
+    left:-34px;
     width: 160%;
   }
   
@@ -487,7 +503,7 @@ iframe #trailer-jedi {
     cursor: initial;
     transform: translate(0, 0);
   }
-  /* ======= fact page ======= */
+  /* ====================================== fact page - media queiries ============================ */
   
   #fact-page-complete-content {
     display: initial;
